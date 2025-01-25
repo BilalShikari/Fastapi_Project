@@ -1,0 +1,23 @@
+
+## API Documentation
+
+### Authentication Endpoints
+| Method | Endpoint                    | Description                          |
+|--------|-----------------------------|--------------------------------------|
+| GET    | `/auth/google/login`        | Redirect to Google login page.       |
+| GET    | `/auth/google/callback`     | Handle Google OAuth callback.        |
+| GET    | `/auth/logout`              | Log out the user and clear the session. |
+
+---
+
+### Watchlist CRUD Endpoints
+| Method | Endpoint                    | Description                          |
+|--------|-----------------------------|--------------------------------------|
+| POST   | `/watchlist/`               | Create a new watchlist entry.        |
+| GET    | `/watchlist/`               | List all watchlist entries.          |
+| GET    | `/watchlist/{id}`           | Retrieve a specific watchlist entry. |
+| PUT    | `/watchlist/{id}`           | Update an existing entry.            |
+| DELETE | `/watchlist/{id}`           | Delete an entry by ID.               |
+
+For detailed input/output schemas and example requests, refer to the **Swagger UI** documentation.
+---

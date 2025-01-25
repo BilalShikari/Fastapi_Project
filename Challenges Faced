@@ -1,0 +1,23 @@
+1. **Activating the Virtual Environment**
+   - Initially, managing multiple Python environments on my system caused issues while activating the virtual environment for the project.
+   - I resolved this by:
+     - Ensuring the correct Python version was used to create the environment (Python 3.9+).
+     - Explicitly specifying the full path to the activation script. For example:
+       ```bash
+       venv\Scripts\activate    # On Windows
+       ``
+
+2. **Finding the Main Branch Path**
+   - Identifying the correct path for the main application file (`main.py`) was a challenge when setting up the FastAPI server.
+   - Misconfigurations in file structure or module imports caused some initial errors.
+   - I resolved this by:
+     - Ensuring the `app/` folder was structured properly, with all necessary modules like `auth.py`, `routes/`, and `main.py` in the correct locations.
+     - Launching the application with:
+       ```bash
+       uvicorn app.main:app --reload
+       ```
+     - Testing file imports and verifying the working directory in VS Code to ensure the correct paths were used.
+
+---
+
+By overcoming these challenges, I improved my understanding of virtual environments, file structures, and FastAPI application deployment. 
